@@ -1,49 +1,21 @@
 {
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
   "compilerOptions": {
-    "target": "ES2020",
-    "composite": true,
     "baseUrl": ".",
     "paths": {
       "@/*": [
         "./src/*"
       ]
     },
-    "strictNullChecks": false,
-    "useDefineForClassFields": true,
-    "lib": [
-      "ES2020",
-      "DOM",
-      "DOM.Iterable"
-    ],
-    "module": "ESNext",
-    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "noUnusedParameters": false,
     "skipLibCheck": true,
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "preserve",
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
     "allowJs": true,
-    "forceConsistentCasingInFileNames": true,
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
-  },
-  "include": [
-    "./dist/types/**/*.ts",
-    "./next-env.d.ts",
-    "./src",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": [
-    "./node_modules"
-  ]
+    "noUnusedLocals": false,
+    "strictNullChecks": false
+  }
 }
