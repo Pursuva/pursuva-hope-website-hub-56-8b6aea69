@@ -4,6 +4,7 @@
 *.env.local
 .env.local
 .env.*.local
+.next/*
 #useless stuff
 /node_modules
 /dist
